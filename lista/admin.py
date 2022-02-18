@@ -17,8 +17,8 @@ admin.site.register(tabela_produto,Produtos)
 
 
 class Vendas(admin.ModelAdmin):
-    list_display = ('id_venda','id_nome','dia_venda')
+    list_display = ('id_venda','tabela_nome','dia_venda')
     list_display_links =('id_venda','dia_venda')
-    search_fields = ('id_venda','id_nome', 'dia_venda')
+    search_fields = ('id_venda','tabela_nome', 'dia_venda')
 
 admin.site.register(tabela_venda,Vendas)
