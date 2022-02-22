@@ -1,5 +1,5 @@
 from dataclasses import fields
-from rest_framework import serializers
+from rest_framework import serializers 
 from lista.models import tabela_cliente,tabela_produto,tabela_venda
 
 class ClienteSerializer(serializers.ModelSerializer):
