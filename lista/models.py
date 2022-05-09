@@ -5,7 +5,7 @@ from django.db import models
 
 class tabela_cliente(models.Model):
     
-    id_cliente = uuid.uuid4()
+    id_cliente = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=50) 
     cpf = models.CharField(max_length=11)
     telefone = models.CharField(max_length=14)
@@ -20,7 +20,7 @@ class tabela_cliente(models.Model):
 
 
 class tabela_produto (models.Model):
-    id_produto = uuid.uuid4()
+    id_produto = models.AutoField(primary_key=True)
     nome_produto = models.CharField( max_length=50)
     quantidade = models.CharField(max_length=50) 
     preco_unidade = models.CharField(("Preço_unidade $"),max_length=50)

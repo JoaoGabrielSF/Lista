@@ -4,14 +4,8 @@ WORKDIR /Django-DockerTest
 
 COPY requirements.txt . 
 
-RUN pip install -r requirements.txt
-
-COPY models.py .
-
+COPY lista . 
+ 
 COPY manage.py .
-
-COPY admin.py . 
-
-
 
 CMD ["python","manage.py","run","server","--host", "0.0.0.0"]
