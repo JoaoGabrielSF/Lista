@@ -51,7 +51,7 @@ pywin32==227
 PyYAML==6.0
 requests==2.27.1
 six==1.10.0
-sqlparse==0.4.2
+sqlparse==0.4.4
 sudo==1.0.0
 toml==0.10.2
 tomli==2.0.1
